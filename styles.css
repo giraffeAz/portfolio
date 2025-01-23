@@ -426,50 +426,57 @@ section ul li.active{
   background: var(--darkOne);
   color: #fff;
 }
-.project{
+.project {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
 }
-.project .itemBox{
- 
-  position: relative;
+
+.project .itemBox {
   width: 25rem;
-  height: 18rem;
+  height: 20rem;
   margin: 2rem;
-  display: block;
+  display: flex;
+  flex-direction: column;
   border-radius: 16px;
   background-color: var(--lightTwo);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
-.project .itemBox.hide{
-  display: none;
 
+.project .itemBox.hide {
+  display: none;
 }
-.project .itemBox .imgBox{
-  position: absolute;
-  top: 0;
-  left: 0;
+
+.project .itemBox .imgBox {
   width: 100%;
-  height: 40%;
-  object-fit: contain;
-  justify-content: center;
+  height: 40%; 
+  object-fit: contain; 
 }
-.project .itemBox .desc p{
-  margin: 2px 10px 5px;
+
+.project .itemBox .desc {
+  padding: 10px; 
+  box-sizing: border-box; 
+  flex-grow: 1; 
+}
+
+.project .itemBox .desc p {
+  margin: 2px 0 5px;
   text-align: justify;
   font-size: 12px;
   color: var(--darkOne);
- 
+  word-wrap: break-word; 
 }
-.project .itemBox .desc span{
-  margin: 2px 10px 5px;
+
+.project .itemBox .desc span {
+  margin: 2px 0 5px; 
   text-align: justify;
   font-size: 10px;
-  
+  word-wrap: break-word; 
+  display: block; 
 }
+
+
 @media screen and (max-width: 870px) {
   .hamburger-menu {
     display: flex;
