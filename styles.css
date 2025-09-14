@@ -515,6 +515,54 @@ section ul li.active{
   display: block; 
 }
 
+@media (max-width: 900px) {
+  .project {
+    max-width: 52rem;   
+    gap: 1.5rem;
+  }
+
+  .project .itemBox {
+    width: calc(50% - 0.75rem); 
+    height: auto;               
+    min-width: 200px;          
+  }
+
+  .project .itemBox:last-child:nth-child(odd) {
+    margin-right: auto;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .project {
+    max-width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center; 
+  }
+
+  .project .itemBox {
+    width: 100%;              
+    max-width: 40rem;         
+    height: auto;
+    margin: 0;                
+  }
+
+ 
+  .project .itemBox:last-child:nth-child(odd) {
+    margin-right: 0;
+  }
+}
+
+.project .itemBox .imgBox img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+
 
 @media screen and (max-width: 870px) {
   .hamburger-menu {
